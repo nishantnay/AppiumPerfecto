@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="helpRequest" value="HELP"/>
+  <parameter name="validRequest" value="COOLIE_REVIEW"/>
+  <parameter name="olapDatabaseName" value="budlight_coolies_20180306"/>
+  <parameter name="validStateRequest" value="MI"/>
+  <parameter name="doubleOptinMessage" value="YES"/>
+  <parameter name="validDOBRequest" value="01011980"/>
+  <parameter name="oltpDatabaseName" value="budlight_coolies"/>
+  <parameter name="stopAllRequest" value="STOPALL"/>
+  <parameter name="dataBaseUrlOLTP" value="jdbc:mysql://r0core-dbs01.int.eprize.net:3306/"/>
+  <parameter name="invalidStateRequest" value="ME"/>
+  <parameter name="password" value="S3r1OusLyD0nT!5hA4eMe!"/>
+  <parameter name="stopRequest" value="STOP"/>
+  <parameter name="invalidDOBRequest" value="01012012"/>
+  <parameter name="dataBaseUrlOLAP" value="jdbc:mysql://r0core-olap02.int.eprize.net:3306/"/>
+  <parameter name="shortCode" value="30364"/>
+  <parameter name="jdbcDriverName" value="com.mysql.jdbc.Driver"/>
+  <parameter name="username" value="qateam"/>
+  <test thread-count="5" name="Samsung 1747 Galaxy S III 4.4(failed)">
+    <parameter name="mobilenumber" value="7816402232"/>
+    <parameter name="deviceID" value="C00C1551"/>
+    <classes>
+      <class name="ePrize.androidMobile.SMSTest.SamsungGalaxyS3AndroidSMSTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="verifySMSRequestandResponse" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- ePrize.androidMobile.SMSTest.SamsungGalaxyS3AndroidSMSTest -->
+    </classes>
+  </test> <!-- Samsung 1747 Galaxy S III 4.4(failed) -->
+</suite> <!-- Failed suite [Suite] -->
